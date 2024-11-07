@@ -25,7 +25,7 @@
             <ul>
                 <?php
                 foreach($pages as $folder => $label){?>
-                    <a src='<?=$folder?>/hompage.php'><li><?=$label?></li><a>
+                    <li><a href='<?=$folder?>/homepage.php'><?=$label?></a></li>
                 <?php }; ?>
             </ul>
     </main>
