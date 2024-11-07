@@ -1,0 +1,23 @@
+
+
+services:
+  web:
+    image: php:8.0-apache
+    container_name: php-apache
+    platform: linux/amd64
+    volumes:
+      - .:/var/www/html/
+    ports:
+      - "8080:80"
+
+  db:
+    image: mysql:8.0
+    container_name: mysql-db
+    platform: linux/amd64
+    environment:
+      MYSQL_ROOT_PASSWORD: root_password
+      MYSQL_DATABASE: my_database
+      MYSQL_USER: root
+      MYSQL_PASSWORD: suji1130
+    ports:
+      - "3306:3306"
