@@ -15,6 +15,6 @@ $end= date_create_from_format('j-n-Y H:i','24-11-2024 01:00');
     <h3> Come celebrate with us!</h3>
     <p>It’s going to be an unforgettable evening filled with music, dancing, delicious food, and drinks!</p>
     <h3>RSVP</h3>
-    <p>Please let us know if you can join the fun by<?=date('js M Y')?></p>
+    <p>Please let us know if you can join the fun by <?=date('jS m Y')?></p>
 </section>
 <?php require '../includes/footer.php'?>

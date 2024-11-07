@@ -23,6 +23,6 @@ $end_date = date('g:i a D jS F Y',$end);
 </section>
 <section>
     Best Regards,
-    on <?= date('jS F Y')?>
+    on <?=date('d m Y'); ?>
 </section>
 <?php include '../includes/footer.php'; ?>

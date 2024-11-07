@@ -22,5 +22,22 @@ To run the code on your local machine, you'll need to set up a local server envi
 ### 1. Clone the Repository
 ```bash
 git clone https://github.com/hyunjiikim/php-mysql-learning.git
+```
 
-### 2. 
+### 2. . Set up the MySQL Database
+Run the MySQL scripts from the mysql directory to create and set up your database tables. You'll need to update the database connection settings in the PHP scripts as needed.
+
+### 3. Accessing the Code
+Open the project folder in your local development environment and start your server. You can access your scripts via the browser by navigating to http://localhost/Php-MySQL.
+
+## Contributing
+
+This repository is meant for personal learning, but feel free to fork it or contribute if you find something useful or have suggestions for improvement. Pull requests are welcome!
+
+## License
+
+This project is for personal educational purposes only and is not licensed for commercial use.
+
+## Acknowledgements
+
+This project is based on the PHP & MySQL book [PHP-MySQL: Server side Web Development by Jon Duckett](https://www.amazon.com/PHP-MySQL-Server-side-Web-Development/dp/1119149223) and is intended to provide hands-on learning for mastering PHP and MySQL.
