@@ -12,7 +12,7 @@ $pages=[
 <h1>Cookies & Sessions</h1>
 <ul>
     <?php foreach($pages as $title => $file){?>
-        <li><a href='<?=$file?>.php'><?=$title?></a></li>
+        <li><a href='./pages/<?=$file?>.php'><?=$title?></a></li>
     <?php } ?>
 </ul>
 <?php include './includes/footer.php';?>
