@@ -5,6 +5,7 @@ $pages=[
     'How to set and access Sessions' => 'sessions',
     'Sign In system' => 'sessions2',
     'Guide user to sign in' => 'account', 
+    'when successfully logged in, it guides to the account page' => 'login',
 ];
 ?>
 

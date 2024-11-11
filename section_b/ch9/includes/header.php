@@ -8,4 +8,4 @@
 </head>
 <body>
     <header></header>
-    <main <?php echo $scheme ? 'class=\''.htmlspecialchars($scheme).'\'': ''; ?> >
+    <main <?php echo isset($scheme) ? 'class=\''.htmlspecialchars($scheme).'\'': ''; ?> >
