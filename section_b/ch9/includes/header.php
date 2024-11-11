@@ -9,4 +9,4 @@
 <body>
     <header>
     </header>
-    <main <?php echo isset($scheme) ? 'class=\''.htmlspecialchars($scheme).'\'': ''; ?> >
+    <main <?= isset($shceme) ? 'class=\''.htmlspecialchars($scheme).'\'': ''; ?> >
