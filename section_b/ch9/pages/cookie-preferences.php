@@ -6,7 +6,7 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
     $color=$_POST['color'];
     setcookie(
         'color',// $name: name of the cookie
-        $color,// $value: value of the cookie
+        $color, // $value: value of the cookie
         time()+60*2,// $expire: expires in 2 minutes (120 seconds)
         '/',// path: available across entire website
         '', // $domain: empty domain: current domain only (no subdomain)
@@ -26,5 +26,5 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
     </select>
     <input type='submit' value='Save'/>
 </form>
-<br><?= var_dump($_POST['color'])?>
+<br><?php isset($_POST['color']) ? var_dump($_POST['color']) : '' ?>
 <?php include '../includes/footer.php';?>

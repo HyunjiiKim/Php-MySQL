@@ -20,6 +20,7 @@
 ?>
 
 <?php include '../includes/header.php';?>
+<?php include '../includes/menu.php';?>
 <form action='login.php' method='POST'>
     <div>
         <label for='id'>ID</label>

@@ -6,8 +6,8 @@ $email = 'hyunjikim@hyunjikim.fr';
 $password='password';
 
 function login(){
-    session_regenerate_id(true); //update session id
-    $_SESSION['logged_in'] = true; //set true for logged_in key
+    session_regenerate_id(true);
+    $_SESSION['logged_in'] = true;
 }
 
 function logout(){

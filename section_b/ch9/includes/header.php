@@ -7,5 +7,6 @@
     <title>Cookies&Sessions</title>
 </head>
 <body>
-    <header></header>
+    <header>
+    </header>
     <main <?php echo isset($scheme) ? 'class=\''.htmlspecialchars($scheme).'\'': ''; ?> >
