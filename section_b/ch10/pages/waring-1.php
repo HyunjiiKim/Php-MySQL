@@ -1,6 +1,6 @@
 <?php
 $price=3.99;
-$qty='7a';
+$qty='7abc';
 $total = $price * $qty ;
 ?>
 
