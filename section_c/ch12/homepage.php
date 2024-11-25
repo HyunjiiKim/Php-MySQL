@@ -2,7 +2,7 @@
 $pages=[
     'Store data-base connection in includes folder' => 'database-connection',
     'Get a data row from database' => 'query-one-row',
-    'test' => 'test',
+    'Check if a query returns data' => 'checking-for-data',
 ];
 ?>
 
