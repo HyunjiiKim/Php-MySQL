@@ -1,5 +1,5 @@
 <?php include './includes/header.php';?>
-<form action='#' method='POST' >
+<form action='./includes/validation.php' method='POST' >
     <section>
         <label for='sex'>Civilité</label>
         <p>
@@ -10,32 +10,32 @@
         </p>
     </section>
     <section>
-        <label>Prénom</label>
-        <input type='text'>
-        <label>Nom de famille</label>
-        <input type='text'>
+        <label for='fname'>Prénom</label>
+        <input type='text' name='fname'>
+        <label for='lname'>Nom de famille</label>
+        <input type='text' name='lname'>
     </section>
     <section>
-    <label>E-mail</label>
-    <input type='text'>
+    <label for='emailId'>E-mail</label>
+    <input type='text' name='emailId'>
     @
-    <select>
-        <option>Choisissez-en</option>
-        <option>gmail.com</option>
+    <select name='emailSv'>
+        <option value=''>Choisissez-en</option>
+        <option value='gmail'>gmail.com</option>
     </select>
     </section>
     <section>
-    <label>Mot de passe</label>
-    <input type='password'>
-    <label>Confirmer mot de passe</label>
-    <input type='password'>
+    <label for='password1'>Mot de passe</label>
+    <input type='password' name='password1'>
+    <label for='password2'>Confirmer mot de passe</label>
+    <input type='password' name='password2'>
     </section>
     <section>
-        <label>Vos Intérêts</label>
-        <p><input type='checkbox'>Musique</p>
-        <p><input type='checkbox'>Littérature</p>
-        <p><input type='checkbox'>Informatique</p>
-        <p><input type='checkbox'>Jeux vidéos</p>
+        <label for='interest[]'>Vos Intérêts</label>
+        <p><input type='checkbox' name='interest[]' value='music'>Musique</p>
+        <p><input type='checkbox' name='interest[]' value='litterature'>Littérature</p>
+        <p><input type='checkbox' name='interest[]' value='pc'>Informatique</p>
+        <p><input type='checkbox' name='interest[]' value='game'>Jeux vidéos</p>
     </section>
     <p>
         <input type='checkbox'>
