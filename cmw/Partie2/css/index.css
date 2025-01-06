@@ -1,0 +1,20 @@
+body{
+    background-color: pink;
+}
+
+form{
+    margin: 3rem auto;
+    padding: 20px;
+    border-radius: 12px;
+    width: 800px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.input_group{
+    display: flex;
+    gap: 0.5rem;
+}
