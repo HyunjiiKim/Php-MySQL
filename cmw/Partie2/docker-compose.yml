@@ -1,7 +1,7 @@
 services:
   web:
     image: php:8.0-apache
-    container_name: php-apache
+    container_name: php-apache2
     platform: linux/amd64
     volumes:
       - .:/var/www/html
@@ -10,7 +10,7 @@ services:
 
   db:
     image: mysql:8.0
-    container_name: mysql-db
+    container_name: mysql-db2
     platform: linux/amd64
     environment:
       MYSQL_ROOT_PASSWORD: root_password
@@ -20,7 +20,7 @@ services:
 
   phpmyadmin: 
     image: phpmyadmin/phpmyadmin
-    container_name: phpmyadmin
+    container_name: phpmyadmin2
     platform: linux/amd64
     environment:
       PMA_HOST: mysql-db

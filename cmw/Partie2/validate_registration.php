@@ -51,10 +51,12 @@ if($_SERVER['REQUEST_METHOD']==='POST'){
   };
 
   /* Question 3 */
-  session_start();
-  $_SESSION['cmw_students'] = $cmw_students;
-  header('Location: my_account.php');
-  exit;
+  if(empty($error_list)){
+    session_start();
+    $_SESSION['cmw_students'] = $cmw_students;
+    header('Location: my_account.php');
+    exit;
+  };
 };
 
 ?>

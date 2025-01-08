@@ -9,7 +9,7 @@
 <body>
     <form method='POST' action='validate_registration.php'>
         <div class='input_group'>
-                <label for='email'>E-mail<label>
+                <label for='email'>E-mail</label>
                 <input type="email" name='email'>
         </div>
         <div class='input_group'>
