@@ -21,9 +21,23 @@ if($_SERVER['REQUEST_METHOD']==='POST'){
     if (empty($_POST['interests'])) $error_list[] = 'Erreur ! Remplissez votre matière préférée';
     if (!isset($_POST['dualdegree'])) $error_list[] = 'Erreur ! Vérifiez le double diplôme';
 
-    /* Validation les types de champs */
+    /* Validation spécalisée */
 
-    
+    $email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
+    !filter_var($email, FILTER_VALIDATE_EMAIL) === false ? '' : $error_list[] = 'Erreur ! Votre e-mail n\'est pas validé';
+
+
+    function isStringNumeric($string) {
+      return ctype_digit($string);
+    }
+
+    isStringNumeric($_POST['zipcode']) ? '' : $error_list[] = 'Erreur ! Le code postal doit être en numérique';
+
+    $password = $_POST['password'] ;
+    mb_strlen($password)>=8 ? '' : $error_list[] = 'Erreur ! le min de la longueur de mot de passe doit être à 8.';
+
+    require 'includes/favorite_course.php';
+    in_array($_POST['interests'], $favorite_course) ? '' : $error_list[] = 'Erreur ! Choisissez votre matière préférée' ;
 
     /* Éviter la double saisie d'une même addresse de mail */
     if(isset($cmw_student) && $cmw_students['email'] === $_POST['email']){
