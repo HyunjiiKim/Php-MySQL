@@ -7,5 +7,6 @@
 </head>
 <body>
     <h1>Mon compte personnel</h1>
+    <?= var_dump($_POST);?>
 </body>
 </html>

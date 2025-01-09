@@ -66,7 +66,7 @@
         </div>
         <div class='input_group'>
             <label for="dualDegree">Double Diplôme ?</label>
-            <input type="checkbox" name="dualDegree" checked>
+            <input type="checkbox" name="dualdegree" value='true'>
         </div>
         <input type="submit" value="Envoyer">
     </form>

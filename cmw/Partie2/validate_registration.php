@@ -5,6 +5,7 @@ $cmw_students=[];
 
 if($_SERVER['REQUEST_METHOD']==='POST'){
 
+  var_dump($_POST);
 /* Question 1 */
     /* Validation les champs requis */
     if (empty($_POST['email'])) $error_list[] = 'Erreur ! Remplissez votre e-mail';
@@ -18,8 +19,11 @@ if($_SERVER['REQUEST_METHOD']==='POST'){
     if (empty($_POST['city'])) $error_list[] = 'Erreur ! Remplissez votre ville de résidence';
     if (empty($_POST['zipcode'])) $error_list[] = 'Erreur ! Remplissez votre code postal';
     if (empty($_POST['interests'])) $error_list[] = 'Erreur ! Remplissez votre matière préférée';
-    if (empty($_POST['dualdegree'])) $error_list[] = 'Erreur ! Cochez le cas de double diplôme';
+    if (!isset($_POST['dualdegree'])) $error_list[] = 'Erreur ! Vérifiez le double diplôme';
 
+    /* Validation les types de champs */
+
+    
 
     /* Éviter la double saisie d'une même addresse de mail */
     if(isset($cmw_student) && $cmw_students['email'] === $_POST['email']){
